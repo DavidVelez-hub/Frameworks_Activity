@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Escuela Roller Speed</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/images/logo.png.jpeg" alt="Logo Escuela de Patinaje" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Institucional
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/mision">Misión</a></li>
+                            <li><a class="dropdown-item" href="/vision">Visión</a></li>
+                            <li><a class="dropdown-item" href="/valores">Valores</a></li>
+                            <li><a class="dropdown-item" href="/servicios">Servicios</a></li>
+                            <li><a class="dropdown-item" href="/eventos">Eventos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <div class="container mt-5 mb-5">
+            <h1 class="text-center mb-5">Eventos de la Escuela</h1>
+            <p class="lead text-center mb-5">En Roller Speed, creemos en la importancia de vivir experiencias memorables fuera de la pista. Nuestros eventos fortalecen la comunidad, celebran el esfuerzo y promueven la alegría del deporte.</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card event-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-ice-cream fa-3x text-success"></i>
+                            <h3>Eventos Recreativos Familiares</h3>
+                            <p>Cada dos semanas, los sábados, realizamos actividades lúdicas para estudiantes y sus familias. ¡Bocadillos, juegos y mucha diversión asegurada!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card event-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-star fa-3x text-warning"></i>
+                            <h3>Exhibiciones de Fin de Semestre</h3>
+                            <p>Al final de cada semestre, presentamos lo aprendido: coreografías, demostraciones técnicas y actuaciones grupales. ¡Familiares y amigos son bienvenidos!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card event-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-trophy fa-3x text-primary"></i>
+                            <h3>Competiciones Locales</h3>
+                            <p>Cada cuatro meses (enero, mayo y septiembre) participamos en competencias locales con el objetivo de destacar y ganar. ¡Nuestros patinadores van por todo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card event-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-flag-checkered fa-3x text-danger"></i>
+                            <h3>Campeonato Nacional</h3>
+                            <p>Una vez al año, seleccionamos a nuestros mejores patinadores para competir en el Campeonato Nacional. Es un orgullo representar a Roller Speed a nivel país.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info text-center mt-5">
+                <strong>¿Quieres participar?</strong> Inscríbete en recepción o escríbenos a <a href="mailto:info@rollerspeed.edu.co">info@rollerspeed.edu.co</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Escuela Roller Speed. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
