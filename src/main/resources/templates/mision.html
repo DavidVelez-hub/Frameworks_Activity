@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visión - Escuela de Patinaje</title>
+    <title>Bienvenidos a Roller Speed</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            margin-top: auto;
+            padding: 1.5rem 0;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        footer .fw-bold {
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
 </head>
-
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
+            <!-- Logo -->
             <a class="navbar-brand" href="/">
-                <img src="/images/logo.png.jpeg" alt="Logo Escuela de Patinaje" width="60" height="60">
+                <img src="/images/logo.png.jpeg" alt="Logo Roller Speed" width="90" height="90">
             </a>
+
+            <!-- Botón colapsable para móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Inicio</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        aria-expanded="false">
                             Institucional
                         </a>
                         <ul class="dropdown-menu">
@@ -42,52 +67,38 @@
                             <li><a class="dropdown-item" href="/valores">Valores</a></li>
                             <li><a class="dropdown-item" href="/servicios">Servicios</a></li>
                             <li><a class="dropdown-item" href="/eventos">Eventos</a></li>
+                            <li><hr class="dropdown-divider"></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
             </div>
         </div>
     </nav>
 
     <!-- Contenido principal -->
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Misión</h1>
-        <p class="lead text-center">
-            En nuestra brillante escuela de patinaje, nos dedicamos a formar niños, jóvenes y adultos en el arte y
-            disciplina del patinaje, esforzándonos en fomentar el deporte como un estilo de vida saludable a la par que
-            divertido.
+    <main class="container my-5 text-center">
+        <h1 class="mb-4">Bienvenidos a Roller Speed</h1>
+        <p class="lead">
+            Roller Speed es una escuela de patinaje dedicada a formar deportistas en todas las etapas: desde quienes 
+            quieren aprender por primera vez, hasta aquellos que buscan competir al más alto nivel.  
+            Nuestro objetivo es fomentar un estilo de vida saludable, valores como el respeto, el trabajo en equipo 
+            y la perseverancia, y acompañar a cada estudiante en su crecimiento personal y deportivo.
         </p>
+    </main>
 
-        <!-- Tarjeta con borde azul a la izquierda y centrada -->
-        <div class="row justify-content-center mt-5 mb-5">
-            <div class="col-md-8">
-                <div class="shadow-sm p-4">
-                    <h3 class="mb-3">Compromiso</h3>
-                    <p class="mb-0">
-                        Estamos comprometidos con nuestro método de enseñanza personalizado, basándonos principalmente
-                        en los valores del respeto, perseverancia y trabajo en equipo; creando un ambiente seguro y
-                        motivador que impulse el desarrollo personal, físico, social y emocional de nuestros
-                        estudiantes.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-dark text-light text-center py-3 mt-auto">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 Escuela Roller Speed. Todos los derechos reservados.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-1">&copy; 2025 Roller Speed</p>
+        <p class="mb-0">Desarrollado por:</p>
+        <p class="fw-bold">
+            Isabela Blandón Vélez · Salome Molina Reyes · David Vélez Vanegas · 
+            Víctor Manuel Quiceno Guerra · Sebastián Posada Duque
+        </p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 </body>
-
 </html>
