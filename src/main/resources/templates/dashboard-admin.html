@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Bienvenido, Administrador <span th:text="${username}"></span>!</h1>
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Gestión de Alumnos</h5>
+                    <p class="card-text">Administra a los alumnos.</p>
+                    <a href="#" class="btn btn-primary">Ver alumnos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Gestión de Instructores</h5>
+                    <p class="card-text">Administra a los instructores.</p>
+                    <a href="#" class="btn btn-primary">Ver instructores</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Gestión de Clases</h5>
+                    <p class="card-text">Administra las clases.</p>
+                    <a href="#" class="btn btn-primary">Ver clases</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Reportes</h5>
+                    <p class="card-text">Genera reportes generales.</p>
+                    <a href="#" class="btn btn-primary">Ver reportes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/logout" class="btn btn-danger mt-4">Cerrar sesión</a>
+</div>
+</body>
+</html>

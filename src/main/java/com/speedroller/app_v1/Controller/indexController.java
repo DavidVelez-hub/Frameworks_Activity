@@ -38,4 +38,8 @@ public class indexController {
         return "eventos";
     }
 
+    @GetMapping("/testimonios")
+    public String testimonios() {
+        return "testimonios";
+    }
 }

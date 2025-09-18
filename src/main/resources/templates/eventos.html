@@ -12,40 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body><!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-                <img src="/images/logo.png.jpeg" alt="Logo Escuela de Patinaje" width="60" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Institucional
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/mision">Misión</a></li>
-                            <li><a class="dropdown-item" href="/vision">Visión</a></li>
-                            <li><a class="dropdown-item" href="/valores">Valores</a></li>
-                            <li><a class="dropdown-item" href="/servicios">Servicios</a></li>
-                            <li><a class="dropdown-item" href="/eventos">Eventos</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form> -->
+<div th:replace="fragments/navbar :: navbar"></div>
             </div>
         </div>
     </nav>
@@ -107,18 +74,11 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-1">&copy; 2025 Roller Speed</p>
-        <p class="mb-0">Desarrollado por:</p>
-        <p class="fw-bold">
-            Isabela Blandón Vélez · Salome Molina Reyes · David Vélez Vanegas ·
-            Víctor Manuel Quiceno Guerra · Sebastián Posada Duque
-        </p>
-    </footer>
+<!-- Footer reutilizable -->
+    <div th:replace="fragments/footer :: footer"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <!-- Scripts reutilizables -->
+    <div th:replace="fragments/footer :: scripts"></div>
 </body>
 
 </html>
